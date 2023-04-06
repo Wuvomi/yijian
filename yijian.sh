@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat > /usr/local/bin/yijian.sh << 'EOF2'
+cat > /usr/local/bin/yijian << 'EOF2'
 #!/bin/bash
 
 function display_menu {
@@ -128,10 +128,12 @@ EOL
 
 
 EOF2
-chmod +x /usr/local/bin/yijian.sh
+chmod +x /usr/local/bin/yijian
 
 # 获取脚本所在路径
 script_path="$(readlink -f "$0")"
 
 # 删除脚本自身
 rm -f "$script_path"
+
+bash /usr/local/bin/yijian
