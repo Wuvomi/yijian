@@ -135,5 +135,5 @@ script_path="$(readlink -f "$0")"
 
 # 删除脚本自身
 rm -f "$script_path"
-
+clear
 bash /usr/local/bin/yijian
